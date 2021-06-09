@@ -13,7 +13,6 @@ input{
     border-radius: 20px;
     border: none;
     padding: 5px;
-    color: black;
     text-align: center;
 }
 select{
@@ -27,7 +26,6 @@ select{
 }
 .container{
     background-color: #17224D;
-
     max-width: 500px;
     margin: 100px auto;
     height:400PX;
@@ -60,4 +58,14 @@ h1{
 .resultado{
     grid-column: 2/4;
     text-align: center;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .container{
+        max-width: 300px;
+    }
+    .bloco-calculadora{
+        display: flex;
+        flex-direction: column;
+    }
 }
