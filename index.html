@@ -6,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">   
     <title>Calculadora</title>
 </head>
 <body>
     <section class="container">
         <h1>Calculadora</h1>
-        <form class="bloco-calculadora">
-            <fieldset>                
-                <label for="number1">Numero 1:</label>
-                <input type="number" id="number1" class="" data-number1>
-            </fieldset>
-            <fieldset>
-                <label for="number2">Numero 2:</label>
-                <input type="number" id="number2" class="" data-number2>
-            </fieldset>
-            <select data-operador>
+        <form class="bloco-calculadora">               
+            <input type="number" id="number1" data-number1 placeholder="Digite um número:">
+            <input type="number" id="number2" data-number2 placeholder="Digite um número:">
+            <select data-operador class="operacoes">
                 <option value="somar">Somar</option>
                 <option value="subtrair">Subtrair</option>
                 <option value="dividir">Dividir</option>
                 <option value="multiplicar">Multiplicar</option>
             </select>
-            <input type="submit" value="Enviar" onclick="getData(event)">
-            <input placeholder="Resultado" readonly data-result>
+            <input type="submit" value="Enviar" onclick="getData(event)" class="input-enviar">
+            <input placeholder="Resultado" readonly data-result class="resultado">
         </form>
     </section>
     <script src="./js/main.js"></script>

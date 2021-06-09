@@ -1,36 +1,63 @@
 body{
-    background-color: #1A1406;
+    background-color: black;
     color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+input, select{
+    cursor: pointer;
+}
+input::-webkit-input-placeholder{
+    font-family: 'Orbitron', sans-serif;;
+}
+input{
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+select{
+    border:none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+    font-family: 'Orbitron', sans-serif;;
 }
 .container{
+    background-color: #17224D;
+
     max-width: 500px;
     margin: 100px auto;
+    height:400PX;
+    border-radius:10px;
 
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+h1{
+    font-size: 20px;
+    margin-top: 20px;
+}
 .bloco-calculadora{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px ;
+    grid-gap: 5px;
     padding: 10px;
     margin-top: 5px;
 }
-.calculo{
-    background-color: white;
-
-    width: 200px;
-    height: 20px;
-    color: black;
+.input-enviar{
+    background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;;
+}
+.operacoes{
+    height: 29px;
+}
+.resultado{
+    grid-column: 2/4;
     text-align: center;
-    margin-bottom: 10px;
-}
-.digitos{
-    width:200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.digitos button{
-    width: 24%;
 }

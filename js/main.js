@@ -15,13 +15,15 @@ function getData(event){
     camp2.value=''
 }
 function calc(n1,n2,oper){
+    if(n1 && n2 == NaN){
+        alert("Opa")
+    }
     const result = document.querySelector('[data-result]')
 
     switch(oper){
         case "somar":
             const sm = n1 + n2
             result.value = sm
-            console.log(sm)
             break
 
         case "subtrair":
