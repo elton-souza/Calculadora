@@ -8,12 +8,13 @@ function getData(event){
     const n1 = parseFloat(camp1.value) 
     const n2 = parseFloat(camp2.value)
     const oper = op.value
-    
+
     calc(n1,n2,oper)
 
     camp1.value=''
     camp2.value=''
 }
+
 function calc(n1,n2,oper){
     if(n1 == NaN && n2 == NaN){
         console.log("Opa")
