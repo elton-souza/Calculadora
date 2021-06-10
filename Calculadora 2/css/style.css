@@ -1,0 +1,30 @@
+body{
+    font-family: 'Bungee', cursive;
+}
+.container{
+    min-width: 300px;
+    max-width: 500px;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.painel{
+    width:330px;
+}
+.calc{
+    width: 410px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+
+    justify-content: center;
+}
+input{
+    width: 100%;
+    padding: 5px 0;
+    font-family: 'Bungee', cursive;
+}
