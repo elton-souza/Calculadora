@@ -3,21 +3,26 @@ const painel = document.querySelector('[data-painel]')
 const arrayNumber = document.querySelectorAll('[data-number]')
 arrayNumber.forEach((valor)=>{
     valor.addEventListener('click', ()=>{
-        console.log(valor.value)
-        getData(valor.value)} )
+        const number = parseFloat(valor.value)
+        getData(number)} )
 })
-
+const arrayOperator = document.querySelectorAll('[data-operator]')
+arrayOperator.forEach((operator)=>{
+    operator.addEventListener('click', ()=>{
+        getData(operator.value)
+    })
+})
 function getData(valor){
-    const number = valor
-    render(number)
+    const data = valor
+    render(data)
 }
-function render(number){
-    painel.value += number
+function render(data){
+    painel.value += data
 }
 function clear(){
-    painel.value = ""
+    alert('ALO')
 }
-
-function result(valor1,valor2,op){
-
+function result(){
+    const result = eval(painel.value)
+    painel.value = result
 }
