@@ -1,28 +1,34 @@
-const painel = document.querySelector('[data-painel]')
+const screen = document.querySelector('[data-screen]')
 
 const arrayNumber = document.querySelectorAll('[data-number]')
 arrayNumber.forEach((valor)=>{
     valor.addEventListener('click', ()=>{
-        const number = parseFloat(valor.value)
-        getData(number)} )
+        getData(valor.value)} )
 })
+
 const arrayOperator = document.querySelectorAll('[data-operator]')
 arrayOperator.forEach((operator)=>{
     operator.addEventListener('click', ()=>{
         getData(operator.value)
     })
 })
+
 function getData(valor){
     const data = valor
     render(data)
 }
 function render(data){
-    painel.value += data
-}
-function clear(){
-    alert('ALO')
+    screen.value += data
 }
 function result(){
-    const result = eval(painel.value)
-    painel.value = result
+    if (screen.value == ""){
+        alert('Não vai ter resultado se não tiver o calculo :)')
+    }else{
+        const result = eval(screen.value)
+        screen.value = result
+    }
+}
+
+function clearScreen(){
+    screen.value = ""
 }
