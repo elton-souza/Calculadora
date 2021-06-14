@@ -13,7 +13,7 @@
 <body>
     <section class="container">
         <h1>Calculadora</h1>
-        <input readonly class="painel" data-painel>
+        <input readonly class="painel" data-screen>
         <div class="calc">
             <input type="button" value="1" data-number>
             <input type="button" value="2" data-number>
@@ -31,7 +31,7 @@
             <input type="button" value="." data-number>
             <input type="button" value="=" data-result onclick="result()">
             <input type="button" value="/" data-operator>
-            <input type="button" value="AC" onclick="clear()" class="input-clear">
+            <input type="button" value="CE" onclick="clearScreen()" class="input-clear">
         </div>
     </section>
     <script src="./js/main.js"></script>
