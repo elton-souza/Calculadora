@@ -20,7 +20,7 @@ h1{
     font-size: 20px;
 }
 .painel{
-    background-color:red;
+    background-color:#444343;
     margin: 15px 0;
     width:343px;
 }
@@ -46,7 +46,7 @@ input{
 
     font-size: 20px;
 }
-.input-clear{
+.input-result{
     grid-column: 1/5;
 }
 
