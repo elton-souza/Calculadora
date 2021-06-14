@@ -1,22 +1,18 @@
 const screen = document.querySelector('[data-screen]')
 
-const arrayNumber = document.querySelectorAll('[data-number]')
-arrayNumber.forEach((valor)=>{
-    valor.addEventListener('click', ()=>{
-        getData(valor.value)} )
+const arrayData = document.querySelectorAll('[data-number]')
+arrayData.forEach((buttonNumber)=>{
+    buttonNumber.addEventListener('click', ()=>{
+        render(buttonNumber.value)} )
 })
 
 const arrayOperator = document.querySelectorAll('[data-operator]')
-arrayOperator.forEach((operator)=>{
-    operator.addEventListener('click', ()=>{
-        getData(operator.value)
+arrayOperator.forEach((buttonOperator)=>{
+    buttonOperator.addEventListener('click', ()=>{
+        render(buttonOperator.value)
     })
 })
 
-function getData(valor){
-    const data = valor
-    render(data)
-}
 function render(data){
     screen.value += data
 }
