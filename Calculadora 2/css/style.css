@@ -17,7 +17,8 @@ body{
 }
 h1{
     color:#17224D;
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 10px;
 }
 .painel{
     background-color:#444343;
