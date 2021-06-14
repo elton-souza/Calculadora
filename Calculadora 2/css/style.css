@@ -29,3 +29,6 @@ input{
     font-family: 'Bungee', cursive;
     text-align: center;
 }
+.input-clear{
+    grid-column: 1/5;
+}
