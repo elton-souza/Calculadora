@@ -7,8 +7,7 @@ body{
     border-radius: 10px;
 
     height: 500px;
-    min-width: 300px;
-    max-width: 500px;
+    width: 500px;
     margin: 100px auto;
 
     display: flex;
@@ -51,9 +50,12 @@ input{
     grid-column: 1/5;
 }
 
-@media screen and (width:320px){
-    .painel{
+@media screen and (max-width:600px){
+    .container{
         width: 300px;
+    }
+    .painel{
+        width: 255px;
     }
     .calc{
         width: 100%;
